@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDark: hsl(229, 23%, 23%);
+    --font: hsl(227, 10%, 46%);
+}
+
+body{
+    background-color: var(--darkCyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--font); 
+    position: relative;
+}
+
+.body_container{
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+
+h3{
+    color: var(--veryDark);
+}
+
+.container{
+    width: 345px;
+    height: auto;
+    background-color: white;
+    margin: 200px auto;
+    border-radius: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.background_card{
+    height: 150px;
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.img_container{
+    border-radius: 55%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    margin: -50px auto 20px auto;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    
+}
+
+.age{
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.numbers{
+    margin-top: 1.8rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.top,
+.bottom{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.top{
+    transform: translate(-80%,-45%);
+}
+
+.bottom{
+    transform: translate(10%,45%);
+}
+
+@media screen and (min-width:765px){
+    .top{
+        transform: translate(-60%,-45%);
+    }
+    
+    .bottom{
+        transform: translate(30%,45%);
+    }
+}
+
+@media screen and (min-width:1020px){
+    .top{
+        transform: translate(-50%,-45%);
+    }
+    
+    .bottom{
+        transform: translate(51%,45%);
+    }
+}
+    
+@media screen and (min-width:1120px){
+    .top{
+        transform: translate(-30%,-45%);
+    }
+    
+    .bottom{
+        transform: translate(72%,45%);
+    }
+}
+
+
+
+
